@@ -1,0 +1,9 @@
+import calendar
+m, y = input().split('/')
+day = calendar.monthcalendar(int(y), int(m))[-1][4]
+if not day:
+    day = calendar.monthcalendar(int(y), int(m))[-2][4]
+day = str(day)
+if len(day) == 1:
+    day = '0' + day
+print(f'{day}.{m}.{y}')
