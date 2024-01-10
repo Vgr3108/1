@@ -1,9 +1,14 @@
-
 #Написать функцию проверки неравенства для целых чисел. Возможные неравенства: "<" и ">"
 
 
 compare_1 = input("Введите первое число:2")
 compare_2 = input("Введите второе число:5")
 
-if compare_1 > compare_2:
-    print(compare_1, "False", compare_2)
+if compare_1 < compare_2:
+    print(compare_1, "Меньше, чем", compare_2)
+
+if compare_2 < compare_1:
+        print(compare_1, "Больше, чем", compare_2)
+
+if compare_1 == compare_2:
+    print(compare_1, "равно", compare_2)
